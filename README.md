@@ -1,9 +1,62 @@
 # SYSU-Campus-GVI-Dataset
 
-### A campus scene GNSS-visual-inertial dataset collected at Sun Yat-sen University Shenzhen Campus.
-![map_sysu](https://github.com/SYSU-CPNTLab/SYSU-Campus-GVI-Dataset/assets/74598384/c039b9a8-81d1-4094-aa11-6ca49ab2f9ef)
+ 
 
-![scence](https://github.com/SYSU-CPNTLab/SYSU-Campus-GVI-Dataset/assets/74598384/1b91d1fe-3e0b-41de-a885-8e2d4bd440b5)
+### A campus scene GNSS-visual-inertial dataset collected at Sun Yat-sen University Shenzhen Campus.
+
+We collected data from six representative scenes on the SYSU campus. The "\textit{Dormitory Building}" and "\textit{Engineering Building}" scenes, which have urban canyon characteristics, are affected by surrounding high-rise buildings or mountainous trees throughout. In the "\textit{Gymnasium Building}" and "\textit{Medical Building}" scenes, the data collection device goes from the open outdoors indoors and then back outdoors again. The "\textit{SYSU Campus}" and "\textit{Athletic Field}" scenes were collected in large-scale and repeated environments, respectively. The total duration of the SYSU-Campus-GVI datasets is about 3611 $s$, and the total driving distance is about 16456 $m$.
+
+![github](https://github.com/SYSU-CPNTLab/SYSU-Campus-GVI-Dataset/assets/74598384/d519bd1b-2a92-45b6-902a-621812ab74e7)
+
+### Data collection system
+The data collection system is equipped with a RealSense D455 camera, which is used to collect visual data (including monocular and binocular, 30Hz) and IMU data (200Hz). In addition, the VI data synchronizes the GNSS measurements (5Hz) provided by VRTK2. The GNSS results are provided by the GNSS device equipped with two u-blox ZED-F9P modules and two antennas (AH 3232). 
+![equip3](https://github.com/SYSU-CPNTLab/SYSU-Campus-GVI-Dataset/assets/74598384/ac345e7b-3440-4011-b9b0-56d08d7c445f)
+
+
+### Details of the real-world dataset and technical details of the acquisition system
+
+| SYSU-Campus-GVI Dataset | Description |
+| --- | --- |
+| Dormitory Building | Urban Canyon |
+| | Duration: 523.833 s |
+| | Distance: 2705.868 m |
+| Engineering Building | Urban Canyon |
+| | Duration: 620.109 s |
+| | Distance: 2885.359 m |
+| Gymnasium Building | Outdoor-Indoor-Outdoor |
+| | Duration: 806.222 s |
+| | Distance: 3455.805 m |
+| Medical Building | Outdoor-Indoor-Outdoor |
+| | Duration: 630.626 s |
+| | Distance: 2932.079 m |
+| Athletic Field | Repeating Textures |
+| | Duration: 304.259 s |
+| | Distance: 879.583 m |
+| SYSU Campus | Large Scale |
+| | Duration: 725.800 s |
+| | Distance: 3597.251 m |
+
+| Camera sensor | OmniVision Technologies OV9782 |
+| --- | --- |
+| Resolution | Up to 1280 × 800 px |
+| Shutter Type | Global Shutter |
+| FOV (H × V) | 90 × 65° |
+| Frame Rate | 30 fps |
+
+| Inertial Measurement Unit | Bosch BMI055 |
+| --- | --- |
+| Degrees of Freedom | 6 |
+| Gyroscope frequency | 200 Hz |
+| Accelerometer frequency | 200 Hz |
+| Sample Timestamp Accuracy | 50 μs |
+
+| GNSS | VRTK2 |
+| --- | --- |
+| Receiver | U-blox ZED-F9P × 2 |
+| Antenna | AH 3232 × 2 |
+| RTK Solution Frequency | 5 Hz |
+
+
 
 ### The data items within the rosbag are listed below:
 | topic | type | frequency | description |
