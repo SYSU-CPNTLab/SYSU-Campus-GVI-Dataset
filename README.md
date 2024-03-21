@@ -72,3 +72,26 @@ The data collection system is equipped with a RealSense D455 camera, which is us
 LINK: https://pan.baidu.com/s/1SiHDs3xduDLrfQUzlAEYEQ 
 
 PASSWORD: CPNT 
+
+### Related paper
+
+  When using this SYSU-Campus-GVI-Dataset in academic work, please consider citing:
+
+    @ARTICLE{10477234,
+      author={Song, Jiangbo and Li, Wanqing and Duan, Chufeng and Zhu, Xiangwei},
+      journal={IEEE Internet of Things Journal}, 
+      title={R2-GVIO: A Robust, Real-Time GNSS-Visual-Inertial State Estimator in Urban Challenging Environments}, 
+      year={2024},
+      volume={},
+      number={},
+      pages={1-1},
+      keywords={Global navigation satellite system;Cameras;Navigation;Visualization;Robustness;Real-time systems;Odometry;Visual-Inertial Odometry;GNSS;Sensor Fusion;Localization},
+      doi={10.1109/JIOT.2024.3379755}}
+
+Related paper:
+
+[1]	J. Song, W. Li, C. Duan and X. Zhu, "R2-GVIO: A Robust, Real-Time GNSS-Visual-Inertial State Estimator in Urban Challenging Environments," in IEEE Internet of Things Journal, doi: 10.1109/JIOT.2024.3379755.
+
+
+
+
